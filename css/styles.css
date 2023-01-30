@@ -105,7 +105,7 @@ img {
     height: 4px;
     bottom: 0;
     left: 0;
-    background: #2196F3;
+    background: var(--brand-color);
     border-radius: 2px;
 }
 
@@ -319,6 +319,31 @@ img {
     margin-left: 30px;
 }
 
+.actions-img {
+    position: relative;
+}
+
+.actions-descript {
+    display: block;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--third-brand-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
 /*====end section 3====*/
 
 /*====start section 4====*/
