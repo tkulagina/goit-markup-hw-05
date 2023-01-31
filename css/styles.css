@@ -195,8 +195,9 @@ img {
     margin-right: auto;
     margin-left: auto;
     background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url(../images/hero.jpg);
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -368,8 +369,8 @@ img {
     padding: 30px 32px;
     border-radius: 0px 0px 4px 4px; 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-     0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .subtitle-team {
@@ -462,7 +463,7 @@ img {
 
 .client-list-link:hover,
 .client-list-link:focus {
-   border-color: var(--brand-color);
+    border-color: var(--brand-color);
 }
 
 /*====end section 5====*/
@@ -596,8 +597,8 @@ address {
     background-color: var(--second-background-color);
 
     transition: color var(--time-duration) var(--timing-function),
-    background-color var(--time-duration) var(--timing-function), 
-    box-shadow var(--time-duration) var(--timing-function);
+        background-color var(--time-duration) var(--timing-function), 
+        box-shadow var(--time-duration) var(--timing-function);
 }
 
 .button-portfolio:hover,
@@ -605,8 +606,8 @@ address {
     color: var(--third-brand-color);
     background-color: var(--brand-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
-    0px 1px 2px rgba(0, 0, 0, 0.08), 
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+        0px 1px 2px rgba(0, 0, 0, 0.08), 
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -657,7 +658,63 @@ margin-top: 30px;
 .link-portfolio:hover,
 .link-portfolio:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-     0px 4px 4px rgba(0, 0, 0, 0.06), 
-     1px 4px 6px rgba(0, 0, 0, 0.16);
+        0px 4px 4px rgba(0, 0, 0, 0.06), 
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /*====end section portfolio====*/
+
+/*====start Modal window====*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    transition: opacity var(--time-duration) var(--timing-function),
+        visibility var(--time-duration) var(--timing-function);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+
+    background-color: var(--third-brand-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    background-color: var(--third-brand-color);
+    cursor: pointer;
+}
+/*====end Modal window====*/
