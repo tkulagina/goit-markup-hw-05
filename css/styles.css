@@ -11,6 +11,8 @@
     --fill-color: #AFB1B8;
     --main-font-family: 'Roboto', sans-serif;
     --logo-font-family: 'Raleway', sans-serif;
+    --time-duration: 250ms;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
 
 .body {
@@ -152,7 +154,7 @@ img {
 
 .menu a,
 .connect a{
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--time-duration) var(--timing-function);
 }
  
 .menu a:hover,
@@ -164,7 +166,7 @@ img {
 
 .link .envelope-icon-header, 
 .link .tel-icon-header{
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--time-duration) var(--timing-function);
 }
 
 .link:hover .envelope-icon-header,
@@ -230,7 +232,7 @@ img {
     color: var(--third-brand-color);
     background-color: var(--brand-color); 
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--time-duration) var(--timing-function);
 }
 
 .button :hover,
@@ -319,7 +321,7 @@ img {
     margin-left: 30px;
 }
 
-.actions-img {
+.item-actions {
     position: relative;
 }
 
@@ -405,13 +407,13 @@ img {
     border-radius: 50%;
     background-color: var(--third-brand-color);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--time-duration) var(--timing-function);
 }
 
 .social-list-link .social-list-icon {
     fill: var(--fill-color);
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--time-duration) var(--timing-function);
 }
 
 .social-list-link:hover .social-list-icon,
@@ -445,12 +447,12 @@ img {
     border: 1px solid var(--fill-color);
     border-radius: 4px;
    
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color var(--time-duration) var(--timing-function);
 }
 
 .client-list-icon {
     fill: var(--fill-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill var(--time-duration) var(--timing-function);
 }
 
 .client-list-link:hover .client-list-icon,
@@ -510,7 +512,7 @@ address {
 .footer-contact {
     color: rgba(255, 255, 255, 0.6);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--time-duration) var(--timing-function);
 }
 
 .item-footer {
@@ -554,7 +556,7 @@ address {
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--time-duration) var(--timing-function);
 }
 
 .footer-link-item {
@@ -593,9 +595,9 @@ address {
     color: var(--title-color);
     background-color: var(--second-background-color);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--time-duration) var(--timing-function),
+    background-color var(--time-duration) var(--timing-function), 
+    box-shadow var(--time-duration) var(--timing-function);
 }
 
 .button-portfolio:hover,
@@ -649,7 +651,7 @@ margin-top: 30px;
 .link-portfolio {
     display: block;
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--time-duration) var(--timing-function);
 }
 
 .link-portfolio:hover,
