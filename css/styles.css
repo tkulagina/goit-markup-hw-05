@@ -722,10 +722,7 @@ address {
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.8);
-
-    
-    transition: scale 2500ms /*var(--time-duration)*/ var(--timing-function);
+    transform: translate(-50%, -50%) scale(0.8);   
 }
 
 .modal {
@@ -743,6 +740,7 @@ address {
     border-radius: 4px;
 
     transform: translate(-50%, -50%) scale(1);
+    transition: scale var(--time-duration) var(--timing-function);
 }
 
 .modal-close-btn {
